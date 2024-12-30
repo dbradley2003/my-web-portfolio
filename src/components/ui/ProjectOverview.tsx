@@ -20,7 +20,6 @@ export const ProjectOverview: React.FC<ProjectOverviewProps> = ({
       <h1 className="h5 font-code font-semibold  border-b-2 border-primary pb-2">
         {project.title}
       </h1>
-      {/* <div className="font-grotesk"> */}
       <p className="tagline pt-4">{project.desc}</p>
       <div className="body-1 mt-8">{project.content}</div>
       <ul className="tagline mt-6 flex flex-wrap gap-2">
@@ -30,12 +29,6 @@ export const ProjectOverview: React.FC<ProjectOverviewProps> = ({
           </li>
         ))}
       </ul>
-      {/* </div> */}
-      {/* {project.href && (
-        <Button className="mt-8 bg-accent  " href={project.href}>
-          Live Demo
-        </Button>
-      )} */}
     </>
   );
 };

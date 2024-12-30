@@ -1,4 +1,4 @@
-import { ButtonSvg } from "@/assets/svg/ButtonSvg";
+// import { ButtonSvg } from "@/assets/svg/ButtonSvg";
 
 interface ButtonProps {
   className?: string;
@@ -25,7 +25,7 @@ export const Button: React.FC<ButtonProps> = ({
   const renderButton = () => (
     <button className={classes} onClick={onClick}>
       <span className={spanClasses}>{children}</span>
-      {<ButtonSvg white={white} />}
+      {/* {<ButtonSvg white={white} />} */}
     </button>
   );
 
@@ -37,7 +37,7 @@ export const Button: React.FC<ButtonProps> = ({
       rel="noopener noreferrer"
     >
       <span className={spanClasses}>{children}</span>
-      <ButtonSvg white={white} />
+      {/* <ButtonSvg white={white} /> */}
     </a>
   );
 

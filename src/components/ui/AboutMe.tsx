@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { Section } from "./Section";
-
 import GitHub from "@/assets/svg/github-icon.svg?react";
 import LinkedIn from "@/assets/svg/linkedin-icon.svg?react";
 
@@ -19,7 +17,7 @@ export const AboutMe = () => {
             platforms like AWS and Azure.
           </p>
 
-          <div className="flex items-center justify-center gap-8  ">
+          <div className="flex items-center justify-center gap-8">
             <Button
               href=""
               white={false}

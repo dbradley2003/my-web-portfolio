@@ -24,7 +24,7 @@ export const FileExplorer = () => {
         <div className="relative ">
           <div
             className="relative md:text-left
-           mb-[8.875rem] lg:mb-[2.25rem] 
+           mb-[2.875rem] lg:mb-[2.25rem] 
            "
           >
             <div

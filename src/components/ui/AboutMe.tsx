@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { Section } from "./Section";
 
-import GitHub from "@/assets/svg/github-icon.svg";
-import LinkedIn from "@/assets/svg/linkedin-icon.svg";
+import GitHub from "@/assets/svg/github-icon.svg?react";
+import LinkedIn from "@/assets/svg/linkedin-icon.svg?react";
 
 export const AboutMe = () => {
   return (
@@ -18,77 +19,31 @@ export const AboutMe = () => {
             platforms like AWS and Azure.
           </p>
 
-          <div className="flex items-center justify-center ">
+          <div className="flex items-center justify-center gap-8  ">
             <Button
               href=""
               white={false}
-              className=" bg-lightAction/80 text-base rounded-xl "
+              className=" bg-action text-lg rounded-xl "
             >
               Resume
             </Button>
-            <div className="flex items-center justify-center ml-4">
-              <Button
-                href="https://www.linkedin.com/in/dominic-bradley-602787241/"
-                white={false}
-              >
-                <img src={LinkedIn} alt="GitHub" className="w-15 h-15" />
-                {/* <span className="body-1">LinkedIn</span> */}
-              </Button>{" "}
-              <Button href="https://github.com/dbradley2003" white={false}>
-                <img src={GitHub} alt="GitHub" className="w-15 h-15" />
-                {/* <span className="body-1">GitHub</span> */}
-              </Button>
-            </div>
+            <Button
+              href="https://www.linkedin.com/in/dominic-bradley-602787241/"
+              white={false}
+              className="w-15 h-15 border-none "
+            >
+              <LinkedIn className="w-15 h-15" />
+            </Button>{" "}
+            <Button
+              href="https://github.com/dbradley2003"
+              white={false}
+              className="w-15 h-15 border-none "
+            >
+              <GitHub className="w-15 h-15 " />
+            </Button>
           </div>
         </div>
       </div>
     </Section>
   );
 };
-
-{
-  /* <div className="container border-2  grid font-terminal shadow-sm  grid-cols-2 bg-lightAction text-background justif-center items-center rounded-xl h-[35rem]   "> */
-}
-/* <Button
-              className="text-lg text-background "
-              href="https://github.com/dbradley2003"
-            >
-              <GitHub />
-              <span>GitHub</span>
-            </Button>
-
-            <Button
-              className="text-lg text-background "
-              href="https://www.linkedin.com/in/dominic-bradley-602787241/"
-            >
-              <LinkedIn />
-              <span>LinkedIn</span>
-            </Button> */
-
-{
-  /* <div className="flex col-span-1 justify-center items-left "> */
-}
-{
-  /* <img
-            src={PersonIMG}
-            alt="About Me"
-            className="rounded-full object-cover w-[200px] max-h-[200px]  bg-primary/15  py-8 px-14"
-          /> */
-}
-{
-  /* </div> */
-}
-{
-  /* <Heading
-            className="md:max-w-md lg:max-w-lg"
-            title="About Me"
-            text="I am a software engineer based in Chicago, USA. I specialize in
-            building exceptional websites, full-stack applications, and everything in
-            between."
-            button={
-              <Button className="bg-primary text-white text-base" white={false}>
-                Resume
-              </Button>
-            }
-          ></Heading> */
-}

@@ -1,7 +1,6 @@
 import { projects } from "@/lib/projects";
 import { useFileContext } from "@/FileContext";
 import { ProjectOverview } from "./ui/ProjectOverview";
-import { Section } from "./ui/Section";
 export const ProjectDisplay = () => {
   const currentFile = useFileContext().currentFile;
 

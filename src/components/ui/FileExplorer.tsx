@@ -1,11 +1,7 @@
 import { Section } from "./Section";
-import { LeftSide } from "./LeftSide";
-import { RightSide } from "./RightSide";
-import { Layout } from "./Layout";
 import { Heading } from "./Heading";
 import { Sidebar } from "./Sidebar";
 import { AppGrid } from "./AppGrid";
-import { ProjectOverview } from "./ProjectOverview";
 import { ProjectDisplay } from "@/components/ProjectDisplay";
 import { projects } from "../../lib/projects";
 import { useFileContext } from "@/FileContext";

@@ -22,6 +22,7 @@ Websockets for real-time updates of data of currency rates`,
       "Django",
       "PostgreSQL",
       "React",
+      "Javascript",
       "HTML5",
       "CSS3",
       "LSTM Models",
@@ -45,12 +46,34 @@ Docker for containerization and deployment
     techStack: [
       "Django",
       "React",
+      "Javascript",
       "PostgreSQL",
       "AWS",
       "Docker",
       "GitHub Actions",
       "WebSockets",
       "MSAL-React",
+    ],
+    date: "2023-10-01",
+    href: "https://teamupnow.org",
+  },
+  {
+    title: "Web Portfolio",
+    desc: `
+   This is my personal portfolio website that showcases my projects, skills, and experience.
+    `,
+    content: `
+    Used reusable components to maintain consistency across the website. 
+    Typescript for type safety and better code quality. Vite for faster development and build times.
+    TailwindCSS for styling and responsiveness. shadcn/ui for custom components and animations.
+    `,
+    techStack: [
+      "Typescript",
+      "React",
+      "TailwindCSS",
+      "Vite",
+      "shadcn/ui",
+      "HTML5",
     ],
     date: "2023-10-01",
     href: "https://teamupnow.org",

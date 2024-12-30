@@ -1,11 +1,11 @@
 export function Header() {
   return (
-    <div className="absolute py-2 md:py-4  bg-action   w-full top-0 left-0 shadow-md">
-      <nav className="flex  justify-center items-center ">
-        <h1 className="h5 uppercase font-code text-background font-bold ">
+    <div className="fixed top-0 left-0 w-full z-50 bg-action ">
+      <div className="flex items-center justify-center py-4 px-5 lg:px-7.5 xl:px-10 max-lg:py-4 ">
+        <h1 className="h5 uppercase font-code text-pink font-bold ">
           Portfolio
         </h1>
-      </nav>
+      </div>
     </div>
   );
 }

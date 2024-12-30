@@ -2,7 +2,7 @@ import { Button } from "./Button";
 import { Section } from "./Section";
 import GitHub from "@/assets/svg/github-icon.svg?react";
 import LinkedIn from "@/assets/svg/linkedin-icon.svg?react";
-
+import portfolio from "@/assets/documents/portfolioDocument.pdf";
 export const AboutMe = () => {
   return (
     <Section id="about" className="mt-[6.25rem] bg-primary/5">
@@ -19,7 +19,7 @@ export const AboutMe = () => {
 
           <div className="flex items-center justify-center gap-8">
             <Button
-              href=""
+              href={portfolio}
               white={false}
               className=" bg-action text-lg rounded-xl "
             >

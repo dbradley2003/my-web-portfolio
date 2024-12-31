@@ -9,6 +9,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Sales Reporting Tool",
+    desc: `
+    A tool that reads sales data from a CSV file and generates a report with insights and visualizations.
+    `,
+    content: `
+    Handles large datasets with efficient data processing and visualization
+    `,
+    techStack: ["Python3"],
+    date: "2023-10-01",
+    href: "",
+  },
+  {
     title: "Forex Trade Analysis",
     desc: "A simulation platform that allows users to trade foreign exchange currencies and analyze market trends.",
     content: `
@@ -44,6 +56,7 @@ Docker for containerization and deployment
   GitHub Actions for CI/CD pipelines 
     `,
     techStack: [
+      "Python",
       "Django",
       "React",
       "Javascript",
@@ -57,6 +70,28 @@ Docker for containerization and deployment
     date: "2023-10-01",
     href: "https://teamupnow.org",
   },
+  {
+    title: "Web Portfolio",
+    desc: `
+   This is my personal portfolio website that showcases my projects, skills, and experience.
+    `,
+    content: `
+    Used reusable components to maintain consistency across the website. 
+    Typescript for type safety and better code quality. Vite for faster development and build times.
+    TailwindCSS for styling and responsiveness. shadcn/ui for custom components and animations.
+    `,
+    techStack: [
+      "Typescript",
+      "React",
+      "TailwindCSS",
+      "Vite",
+      "shadcn/ui",
+      "HTML5",
+    ],
+    date: "2023-10-01",
+    href: "https://teamupnow.org",
+  },
+
   {
     title: "Web Portfolio",
     desc: `

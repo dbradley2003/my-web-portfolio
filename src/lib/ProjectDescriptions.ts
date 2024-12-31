@@ -1,7 +1,5 @@
-
-
-export const fileContents: {[key: string]: string} = {
-'About': `
+export const fileContents: { [key: string]: string } = {
+  About: `
     <p></p>
   I’m a third-year Computer Science student at DePaul University with a strong passion for building full-stack web applications. My expertise lies in using Django for backend development and React for frontend development.
   
@@ -11,7 +9,7 @@ export const fileContents: {[key: string]: string} = {
   I also have a strong interest for trading and finance and am currently developing my skills to build predictive trading platforms that empower users to make smarter trading decisions.
   
   `,
-  "TeamUp": `
+  TeamUp: `
 
 <h2 style="text-decoration: underline; font-weight:900; ">Overview:</h2>
 
@@ -33,13 +31,12 @@ export const fileContents: {[key: string]: string} = {
   
   
   `,
-  'Email': `<strong>Personal Email:</strong>
+  Email: `<strong>Personal Email:</strong>
   dombradley2003@gmail.com
   <strong>School Email:</strong>
   dbradl17@depaul.edu
   `,
-  
-  
+
   "Forex Trade Analysis": `
   
   <h2 style="text-decoration: underline; font-weight:900;"> Overview: </h2>
@@ -57,8 +54,8 @@ export const fileContents: {[key: string]: string} = {
   
   `,
 
-   "Portfolio": `
+  "Sales Reporting Tool": `
    In progress
-   `
-  }  
-  // <a href="https://teamupnow.org" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: underline; ">Visit TeamUp</a> 
+   `,
+};
+// <a href="https://teamupnow.org" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: underline; ">Visit TeamUp</a>

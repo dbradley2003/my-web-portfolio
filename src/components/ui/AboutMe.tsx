@@ -3,9 +3,11 @@ import { Section } from "./Section";
 import GitHub from "@/assets/svg/github-icon.svg?react";
 import LinkedIn from "@/assets/svg/linkedin-icon.svg?react";
 import portfolio from "@/assets/documents/portfolioDocument.pdf";
+import { useRefs } from "@/refContext";
 export const AboutMe = () => {
+  const { aboutRef } = useRefs();
   return (
-    <Section id="about" className="mt-[6.25rem] bg-primary/5">
+    <Section id="about" className="mt-[6.25rem] bg-primary/5" ref={aboutRef}>
       <div className="container relative    ">
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6"> About Me</h1>
@@ -21,7 +23,7 @@ export const AboutMe = () => {
             <Button
               href={portfolio}
               white={false}
-              className=" bg-action text-lg rounded-xl "
+              className=" bg-action text-lg rounded hover:text-color-2 "
             >
               Resume
             </Button>

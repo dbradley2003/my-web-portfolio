@@ -15,7 +15,7 @@ export const ProjectDisplay = () => {
   return (
     <div
       className="relative border p-8 
-          border-n-1/10 rounded-2xl   "
+          border-n-1/10 rounded-xl"
     >
       <ProjectOverview project={project} />
     </div>

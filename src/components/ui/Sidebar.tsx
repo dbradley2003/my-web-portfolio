@@ -14,7 +14,7 @@ export function Sidebar() {
             key={folder}
             onClick={() => navigateToFolder(folder)}
             className={cn(
-              "cursor-pointer text-base py-2 px-4 hover:bg-accent  transition-colors ",
+              "cursor-pointer text-base py-2 px-4 hover:bg-accent rounded  transition-colors ",
               folder === currentFolder && " text-white bg-accent"
             )}
           >

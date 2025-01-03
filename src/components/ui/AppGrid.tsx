@@ -11,14 +11,16 @@ export const AppGrid: React.FC = () => {
   // const element = document.getElementById("lottie");
 
   return (
-    <div>
+    <div className="flex items-start w-full  h-full">
       {folders[currentFolder]?.map((item: FolderItem, index: number) => (
-        <div key={index} onClick={() => navigateToFile(item.name)}>
-          <div className="cursor-pointer flex flex-col items-center   ">
-            <div className="hover:bg-slate-500 transition-colors flex flex-col items-center p-4 space-y-2 ">
-              <FileIcon color="#5f15f4" />
-              <p className="text-sm text-center w-[100px] ">{item.name}</p>
-            </div>
+        <div
+          key={index}
+          className="cursor-pointer px-4 py-2 "
+          onClick={() => navigateToFile(item.name)}
+        >
+          <div className="hover:bg-slate-500  cursor-pointer transition-colors flex flex-col items-center mx-2 rounded ml-2 px-2 py-1 ">
+            <FileIcon color="#5f15f4" />
+            <p className="text-sm text-center w-[100px] ">{item.name}</p>
           </div>
         </div>
       ))}

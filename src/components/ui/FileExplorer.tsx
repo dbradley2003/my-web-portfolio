@@ -5,7 +5,9 @@ import { AppGrid } from "./AppGrid";
 import { ProjectDisplay } from "@/components/ProjectDisplay";
 import { projects } from "../../lib/projects";
 import { useFileContext } from "@/FileContext";
+import { useRefs } from "@/refContext";
 export const FileExplorer = () => {
+  const { projectsRef } = useRefs();
   const currentFile = useFileContext().currentFile;
   const project = projects.find((project) => project.title === currentFile);
   if (!project) {
@@ -14,8 +16,8 @@ export const FileExplorer = () => {
     );
   }
   return (
-    <Section id="Projects">
-      <div className="container relative  md:pb-10  ">
+    <Section id="Projects" ref={projectsRef}>
+      <div className="container relative  md:pb-10">
         <Heading
           title="Project Explorer"
           text="This section highlights some of my projects. 
@@ -28,8 +30,8 @@ export const FileExplorer = () => {
            "
           >
             <div
-              className="grid p-8 grid-cols-2 md:col-span-2 mb-6 md:mb-24 text-n-2 border 
-          border-n-1/10 rounded-2xl"
+              className="grid p-8 grid-cols-2 items-center justify-center md:col-span-2 mb-6 md:mb-24 text-n-2 border 
+          border-n-1/10 rounded-xl"
             >
               <Sidebar />
               <AppGrid />

@@ -11,7 +11,7 @@ export const NavBar: React.FC = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <nav className="top-0 left-0 z-50 fixed w-full  bg-action border-gray-200 dark:bg-gray-900">
+    <nav className="top-0 left-0 z-50  fixed w-full   bg-action border-gray-200 dark:bg-gray-900">
       <div className="flex max-w-full flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white transition-colors">
@@ -73,10 +73,7 @@ export const NavBar: React.FC = () => {
             </li>
 
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded md:hover:bg-transparent md:p-0 transition-colors hover:text-color-2"
-              >
+              <a className="block py-2 px-3 text-white rounded md:hover:bg-transparent md:p-0 transition-colors hover:text-color-2">
                 Contact
               </a>
             </li>

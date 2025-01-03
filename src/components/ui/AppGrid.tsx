@@ -11,7 +11,7 @@ export const AppGrid: React.FC = () => {
   // const element = document.getElementById("lottie");
 
   return (
-    <div className="flex items-start w-full  h-full">
+    <div className="flex items-start w-full  ">
       {folders[currentFolder]?.map((item: FolderItem, index: number) => (
         <div
           key={index}

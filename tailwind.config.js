@@ -45,6 +45,7 @@ module.exports = {
         primary: "#5f15f4",
         lightAction: "#c89df0",
         darkAccent: "#e88a5c",
+        darkerbg: "#16122f",
       },
       fontFamily: {
         interRegular: ["InterRegular", "sans-serif"],

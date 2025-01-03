@@ -19,12 +19,15 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 @layer base {
   body {
-    @apply font-sans bg-background text-n-1 text-base;
+    @apply font-sans bg-darkerbg text-n-1 text-base;
   }
 }
 

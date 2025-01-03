@@ -7,9 +7,9 @@ import { useRefs } from "@/refContext";
 export const AboutMe = () => {
   const { aboutRef } = useRefs();
   return (
-    <Section id="about" className="mt-[6.25rem] bg-primary/5" ref={aboutRef}>
-      <div className="container relative    ">
-        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
+    <Section id="about" className=" bg-primary/30 mt-0 " ref={aboutRef}>
+      <div className="container relative     ">
+        <div className="relative z-1 max-w-[62rem] mx-auto text-center mt-[6rem]  mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6"> About Me</h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             Hey there! My name is Dominic, I'm a third year computer science

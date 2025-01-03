@@ -8,17 +8,17 @@ import { NavBar } from "./components/ui/NavBar";
 function App() {
   return (
     <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <FolderProvider>
-          <FileProvider>
-            <RefProvider>
-              <NavBar />
-              <AboutMe />
-              <FileExplorer />
-            </RefProvider>
-          </FileProvider>
-        </FolderProvider>
-      </div>
+      {/* <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden"> */}
+      <FolderProvider>
+        <FileProvider>
+          <RefProvider>
+            <NavBar />
+            <AboutMe />
+            <FileExplorer />
+          </RefProvider>
+        </FileProvider>
+      </FolderProvider>
+      {/* </div> */}
     </>
   );
 }

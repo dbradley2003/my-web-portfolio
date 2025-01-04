@@ -8,7 +8,7 @@ export const Footer = () => {
   const { projectsRef, aboutRef } = useRefs();
   const scrollToSection = (
     ref: React.RefObject<HTMLDivElement>,
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+    event: React.MouseEvent<HTMLLIElement, MouseEvent>
   ) => {
     event.preventDefault();
     ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -30,19 +30,19 @@ export const Footer = () => {
             <ul className="text-sm lg:text-lg flex gap-8 lg:gap-15">
               <li
                 className="hover:text-color-2 transition-colors cursor-pointer"
-                onClick={() => scrollToSection(aboutRef, event)}
+                onClick={(event) => scrollToSection(aboutRef, event)}
               >
                 Home
               </li>
               <li
                 className="hover:text-color-2 transition-colors cursor-pointer"
-                onClick={() => scrollToSection(aboutRef, event)}
+                onClick={(event) => scrollToSection(aboutRef, event)}
               >
                 About
               </li>
               <li
                 className="hover:text-color-2 transition-colors cursor-pointer"
-                onClick={() => scrollToSection(projectsRef, event)}
+                onClick={(event) => scrollToSection(projectsRef, event)}
               >
                 Projects
               </li>

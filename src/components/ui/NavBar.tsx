@@ -58,7 +58,7 @@ export const NavBar: React.FC = () => {
           <ul className="font-medium space-y-2 md:space-y-0 flex flex-col p-4 md:p-0 mt-4  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  ">
             <li>
               <a
-                onClick={() => scrollToSection(aboutRef, event)}
+                onClick={(event) => scrollToSection(aboutRef, event)}
                 href="#"
                 className="block py-2 px-3 text-white rounded md:hover:bg-transparent md:p-0 transition-colors hover:text-color-2"
               >
@@ -67,7 +67,7 @@ export const NavBar: React.FC = () => {
             </li>
             <li>
               <a
-                onClick={() => scrollToSection(projectsRef, event)}
+                onClick={(event) => scrollToSection(projectsRef, event)}
                 href="#"
                 className="block py-2 px-3 text-white rounded md:hover:bg-transparent md:p-0 transition-colors hover:text-color-2"
               >

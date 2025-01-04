@@ -29,7 +29,7 @@ export const AboutMe = () => {
             <Button
               href={portfolio}
               white={false}
-              className=" bg-action mx-0 text-n-1 text-[11px] px-[22px] lg:text-xl lg:px-10 h-[36px] lg:h-[58px] lg:py-[28px]   rounded  hover:text-white hover:bg-action/75 mr-8 lg:mr-16 "
+              className=" bg-action mx-0 text-n-1 text-sm px-[22px] lg:text-xl lg:px-10 h-9  lg:h-[58px] py-[20px] lg:py-[28px]   rounded  hover:text-white hover:bg-action/75 mr-8 lg:mr-16 "
             >
               Resume
             </Button>

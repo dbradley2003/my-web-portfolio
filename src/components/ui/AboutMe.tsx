@@ -7,23 +7,29 @@ import { useRefs } from "@/refContext";
 export const AboutMe = () => {
   const { aboutRef } = useRefs();
   return (
-    <Section id="about" className=" bg-primary/30 mt-0 " ref={aboutRef}>
-      <div className="container relative     ">
-        <div className="relative z-1 max-w-[62rem] mx-auto text-center mt-[6rem]  mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-          <h1 className="h1 mb-6"> About Me</h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Hey there! My name is Dominic, I'm a third year computer science
-            student at university. I specialize in full-stack development and
-            have expertise in Python, TypeScript, JavaScript, and frameworks
-            like Django and React. I also have experience working with cloud
-            platforms like AWS and Azure.
-          </p>
+    <Section
+      id="about"
+      className="pt-[12rem] -mt-[5.25rem] lg:-mt-0  bg-primary/30"
+      ref={aboutRef}
+    >
+      <div className="container relative mt-0 lg:mt-10">
+        <div className="max-w-[62rem] mx-auto text-center mb-[3.875rem]  ">
+          <div className=" space-y-8 mb-6 lg:mb-8">
+            <h1 className="h1 "> About Me</h1>
+            <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
+              Hey there! My name is Dominic, I'm a third year computer science
+              student at university. I specialize in full-stack development and
+              have expertise in Python, TypeScript, JavaScript, and frameworks
+              like Django and React. I also have experience working with cloud
+              platforms like AWS and Azure.
+            </p>
+          </div>
 
           <div className="flex items-center justify-center gap-8">
             <Button
               href={portfolio}
               white={false}
-              className=" bg-action text-lg rounded hover:text-color-2 "
+              className=" bg-action text-lg py-6 rounded hover:text-inherit hover:bg-action/70"
             >
               Resume
             </Button>
@@ -39,11 +45,12 @@ export const AboutMe = () => {
               white={false}
               className="w-15 h-15 border-none "
             >
-              <GitHub className="w-15 h-15 " />
+              <GitHub className="w-15 h-15 hover:bg-action transition-colors " />
             </Button>
           </div>
         </div>
       </div>
+      {/* </div> */}
     </Section>
   );
 };

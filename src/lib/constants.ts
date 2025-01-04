@@ -1,3 +1,4 @@
+import { RefObject } from "react";
 export interface FolderItem {
   name: string;
 }
@@ -10,3 +11,17 @@ export const folders: { [key: string]: FolderItem[] } = {
 };
 
 export const list = ["Web", "ML/AI", "Design", "Other"];
+
+export const navigation = (refs: {
+  aboutRef: RefObject<HTMLDivElement>;
+  projectsRef: RefObject<HTMLDivElement>;
+}) => [
+  {
+    name: "About",
+    ref: refs.aboutRef,
+  },
+  {
+    name: "Projects",
+    ref: refs.projectsRef,
+  },
+];

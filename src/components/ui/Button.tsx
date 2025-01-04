@@ -14,7 +14,7 @@ export const Button: React.FC<ButtonProps> = ({
   href,
   onClick,
   children,
-  px = "px-7",
+  px = "px-5 lg:px-7",
   white = false,
 }) => {
   const classes = `button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 ${

@@ -16,12 +16,14 @@ export const AboutMe = () => {
         <div className="max-w-[62rem] mx-auto text-center mb-[3.5rem] lg:mb-[6.875rem]  ">
           <div className=" space-y-4 lg:space-y-8 mb-6 lg:mb-8">
             <h1 className="h1 "> About Me</h1>
-            <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-              Hey there! My name is Dominic, I'm a third year computer science
-              student at university. I specialize in full-stack development and
-              have expertise in Python, TypeScript, JavaScript, and frameworks
-              like Django and React. I also have experience working with cloud
-              platforms like AWS and Azure.
+            <p className="body-1 max-w-3xl  mx-auto mb-6 text-n-2 lg:mb-8">
+              I’m Dominic, a third-year computer science student and
+              aspiringsoftware developer. I’ve worked on diverse projects,
+              including TeamUp, a full-stack web app that helps film students
+              collaborate, and predictive modeling tools that assist traders in
+              decision-making. I also specialize in creating data visualizations
+              for large datasets. I’m eager to apply my technical expertise to
+              impactful, real-world projects.
             </p>
           </div>
 

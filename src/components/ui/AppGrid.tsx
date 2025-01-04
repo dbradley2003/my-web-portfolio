@@ -22,14 +22,14 @@ export const AppGrid: React.FC = () => {
           >
             <div
               className={cn(
-                " flex-col hover:bg-slate-500   space-y-0.5 ml-[2.785rem] lg:ml-[6.75rem] p-0.5   lg:p-3 rounded",
+                " flex-col hover:bg-slate-500 space-y-0.5 ml-[3.785rem] lg:ml-[6.75rem] py-1 px-3   lg:p-3 rounded",
                 { "bg-slate-500 ": item.name === currentFile }
               )}
             >
-              <div className=" max-w-14 max-h-14 lg:min-w-20 lg:min-h-20  mx-auto">
+              <div className=" max-w-12 max-h-12 lg:min-w-20 lg:min-h-20  mx-auto">
                 <FileIcon className=" w-full h-full mb-2 " color="#5f15f4" />
               </div>
-              <p className="text-center   ">{item.name}</p>
+              <p className="text-sm lg:text-lg text-center">{item.name}</p>
             </div>
           </div>
         ))}

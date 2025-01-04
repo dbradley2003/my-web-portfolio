@@ -45,7 +45,7 @@ export const AboutMe = () => {
               white={false}
               className="w-15 h-15 border-none "
             >
-              <GitHub className="w-15 h-15 hover:bg-action transition-colors " />
+              <GitHub className="w-15 h-15" />
             </Button>
           </div>
         </div>

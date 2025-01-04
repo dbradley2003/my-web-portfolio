@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto  bg-background mt-4 rounded-xl font-grotesk p-[1.75rem]">
+    <div className="container mx-auto z-10  bg-background mt-4 rounded-xl font-grotesk p-[1.75rem]">
       <form onSubmit={handleSubmit} className="max-w-sm mx-auto">
         <h1 className="font-grotesk h3 mb-6 text-left text-n-1/90 font-bold   ">
           Contact Me

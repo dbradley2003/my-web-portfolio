@@ -15,8 +15,8 @@ export const Footer = () => {
   };
   return (
     <Section className="!px-0 !py-15 border-t border-n-1/10 ">
-      <div className="container  relative z-1">
-        <div className="font-grotesk flex-col  relative z-1 space-y-10 lg:space-y-15 ">
+      <div className="container z-1 relative ">
+        <div className="font-grotesk flex-col  relative space-y-10 lg:space-y-15 ">
           <div className="py-8 lg:py-15 border bg-[#5614da] border-n-1/10 w-full text-center space-y-6 lg:space-y-15 rounded-xl shadow">
             <h1 className=" text-xl  text-n-1 lg:text-[2.75rem] font-bold ">
               dombradley2003@gmail.com
